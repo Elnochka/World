@@ -1,0 +1,8 @@
+2016-06-07 23:45:41,921  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-07 23:45:42,078  INFO [main] - World.main 49 - Print night message
+2016-06-07 23:48:31,796  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-07 23:48:31,843  INFO [main] - World.main 49 - Print night message
+2016-06-07 23:49:03,296  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-07 23:49:03,312  INFO [main] - World.main 49 - Print night message
+2016-06-07 23:49:51,562  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-07 23:49:51,562  INFO [main] - World.main 49 - Print night message

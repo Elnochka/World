@@ -1,0 +1,24 @@
+2016-06-08 10:26:34,656  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 10:26:34,718  INFO [main] - World.main 34 - Print morning message
+2016-06-08 10:34:49,500  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 10:34:49,546  INFO [main] - World.main 34 - Print morning message
+2016-06-08 10:39:25,796  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 10:39:25,796  INFO [main] - World.main 34 - Print morning message
+2016-06-08 11:25:02,062  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 11:25:02,078  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 11:25:02,093  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
+2016-06-08 11:25:02,125  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
+2016-06-08 11:25:02,125  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
+2016-06-08 11:25:02,125  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
+2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
+2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
+2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
+2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
+2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
+2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
+2016-06-08 11:25:02,453  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
+2016-06-08 11:25:02,453  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-08 11:25:02,453  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
