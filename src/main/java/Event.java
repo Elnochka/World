@@ -1,6 +1,8 @@
 import org.apache.log4j.Logger;
 
 import java.util.Date;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 /**
  * Created by Елена on 07.06.16.
@@ -80,7 +82,11 @@ public class Event {
         return hours;
     }
 
+    public String printLocal(String str, Locale loc) {
+        ResourceBundle res = ResourceBundle.getBundle("bn",loc);
+        return res.getString(str);
 
+    }
 
 
 

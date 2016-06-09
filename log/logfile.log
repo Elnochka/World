@@ -1,24 +1,46 @@
-2016-06-08 10:26:34,656  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 10:26:34,718  INFO [main] - World.main 34 - Print morning message
-2016-06-08 10:34:49,500  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 10:34:49,546  INFO [main] - World.main 34 - Print morning message
-2016-06-08 10:39:25,796  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 10:39:25,796  INFO [main] - World.main 34 - Print morning message
-2016-06-08 11:25:02,062  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 11:25:02,078  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 11:25:02,093  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
-2016-06-08 11:25:02,125  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
-2016-06-08 11:25:02,125  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
-2016-06-08 11:25:02,125  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
-2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
-2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
-2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
-2016-06-08 11:25:02,140  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
-2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
-2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
-2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 46 - Create -> Good evening, World!
-2016-06-08 11:25:02,156  INFO [main] - Event.getEvent 42 - Create -> Good day, World!
-2016-06-08 11:25:02,453  INFO [main] - Event.getEvent 38 - Create  -> Good morning, World!
-2016-06-08 11:25:02,453  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
-2016-06-08 11:25:02,453  INFO [main] - Event.getEvent 50 - Create -> Good night, World!
+2016-06-09 14:59:39,453  INFO [main] - Event.getEvent 79 - Create  -> Good DAY, World!
+2016-06-09 15:00:51,828  INFO [main] - Event.getEvent 79 - Create  -> Good day, World!
+2016-06-09 15:00:51,859  INFO [main] - World.main 20 - Print day message
+2016-06-09 15:29:42,328  INFO [main] - Event.getEvent 81 - Create  -> Good night, World!
+2016-06-09 00:46:18,671  INFO [main] - Event.getEvent 71 - Create  -> Good night, World!
+2016-06-09 00:46:18,734  INFO [main] - World.main 20 - Print night message
+2016-06-09 16:11:55,015  INFO [main] - Event.getEvent 71 - Create  -> Good day, World!
+2016-06-09 16:11:55,031  INFO [main] - World.main 20 - Print day message
+2016-06-09 16:12:11,343  INFO [main] - Event.getEvent 71 - Create  -> Good morning, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good morning, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good day, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good day, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good night, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good night, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good evening, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good morning, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good day, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good evening, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good evening, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good evening, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good day, World!
+2016-06-09 16:12:11,468  INFO [main] - Event.getEvent 71 - Create  -> Good night, World!
+2016-06-09 16:12:11,484  INFO [main] - Event.getEvent 71 - Create  -> Good night, World!
+2016-06-09 16:47:53,765  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 16:47:53,828  INFO [main] - World.main 23 - Print day message
+2016-06-09 16:54:28,375  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 16:54:28,406  INFO [main] - Event.getEvent 73 - Create  -> Good night, World!
+2016-06-09 17:07:06,546  INFO [main] - Event.getEvent 73 - Create  -> Good morning, World!
+2016-06-09 17:07:06,593  INFO [main] - Event.getEvent 73 - Create  -> Good morning, World!
+2016-06-09 17:07:06,593  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 17:07:06,609  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 17:07:06,609  INFO [main] - Event.getEvent 73 - Create  -> Good night, World!
+2016-06-09 17:07:06,609  INFO [main] - Event.getEvent 73 - Create  -> Good night, World!
+2016-06-09 17:07:06,625  INFO [main] - Event.getEvent 73 - Create  -> Good evening, World!
+2016-06-09 17:07:06,625  INFO [main] - Event.getEvent 73 - Create  -> Good morning, World!
+2016-06-09 17:07:06,625  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 17:07:06,625  INFO [main] - Event.getEvent 73 - Create  -> Good evening, World!
+2016-06-09 17:07:06,625  INFO [main] - Event.getEvent 73 - Create  -> Good evening, World!
+2016-06-09 17:07:06,625  INFO [main] - Event.getEvent 73 - Create  -> Good evening, World!
+2016-06-09 17:07:06,640  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 17:07:06,640  INFO [main] - Event.getEvent 73 - Create  -> Good night, World!
+2016-06-09 17:07:06,640  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 17:07:06,656  INFO [main] - Event.getEvent 73 - Create  -> Good night, World!
+2016-06-09 17:07:06,656  INFO [main] - Event.getEvent 73 - Create  -> Good night, World!
+2016-06-09 17:07:43,906  INFO [main] - Event.getEvent 73 - Create  -> Good day, World!
+2016-06-09 17:07:43,953  INFO [main] - World.main 20 - Добрый день, Мир!

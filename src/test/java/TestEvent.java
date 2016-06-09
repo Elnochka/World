@@ -1,35 +1,60 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Locale;
+
 /**
  * Created by Елена on 07.06.16.
  */
 public class TestEvent {
 
+    public Locale localRus() {
+        return new Locale("ru", "RU");
+    }
+
+    public Locale localEn() {
+        return new Locale("en", "EN");
+    }
+
+    @Test
+    public void testNightFirstLocal(){
+
+        Event event = new Event(15);
+
+        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
+    }
+
+    @Test
+    public void testNightSecondLocal(){
+
+        Event event = new Event(5);
+        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
+    }
+
     @Test
     public void testNightFirst(){
 
         Event event = new Event(23);
-        Assert.assertEquals(event.getEvent(), "night");
+        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
     }
 
     @Test
     public void testNightSecond(){
 
-        Event event = new Event(5);
-        Assert.assertEquals(event.getEvent(), "night");
+        Event event = new Event(3);
+        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
     }
 
     @Test
     public void testNightThree(){
         Event event = new Event(1);
-        Assert.assertEquals(event.getEvent(), "night");
+        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
     }
 
     @Test
     public void testNightFour(){
         Event event = new Event(2);
-        Assert.assertEquals(event.getEvent(), "night");
+        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
     }
 
     @Test
@@ -54,25 +79,25 @@ public class TestEvent {
     @Test
     public void testDayFirst(){
         Event event = new Event(9);
-        Assert.assertEquals(event.getEvent(), "day");
+        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
     }
 
     @Test
     public void testDaySecond(){
         Event event = new Event(18);
-        Assert.assertEquals(event.getEvent(), "day");
+        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
     }
 
     @Test
     public void testDayThree(){
-        Event event = new Event(15);
-        Assert.assertEquals(event.getEvent(), "day");
+        Event event = new Event(17);
+        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
     }
 
     @Test
     public void testDayFour(){
         Event event = new Event(16);
-        Assert.assertEquals(event.getEvent(), "day");
+        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
     }
 
     @Test

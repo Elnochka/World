@@ -1,7 +1,6 @@
 import org.apache.log4j.Logger;
 
 import java.util.Locale;
-import java.util.ResourceBundle;
 
 
 /**
@@ -11,13 +10,14 @@ public class World {
     private static final Logger log = Logger.getLogger(World.class);
 
     public static void main(String[] args) {
-        Locale.getDefault();
-        ResourceBundle res = ResourceBundle.getBundle("bn");
+
+        Locale current = new Locale("ru", "RU");
 
         Event event = new Event();
         String str = event.getEvent();
-        System.out.println(res.getString(str));
-        log.info("Print " + str +" message");
+        String str1 = event.printLocal(str, current);
+        System.out.println(str1);
+        log.info(str1);
 
     }
 }
