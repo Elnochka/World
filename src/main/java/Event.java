@@ -1,7 +1,5 @@
 import org.apache.log4j.Logger;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -9,66 +7,81 @@ import java.util.Date;
  */
 public class Event {
     private static final Logger log = Logger.getLogger(Event.class);
-    private static SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
-
-    private Date current;
-    private Date morning;
-    private Date day;
-    private Date evening;
-    private Date night;
     private Date currentDate;
+    private int hours;
 
-    private Event(){
-        currentDate = new Date();
+
+    public Event(){
+        this.currentDate = new Date();
+        this.hours = currentDate.getHours();
     }
-    private Event(String event) throws ParseException {
-        currentDate = dateFormat.parse(event);
+    public Event(int hours) {
+        this.hours = hours;
     }
 
-    public String  getEvent() throws ParseException{
-
-        current = dateFormat.parse(dateFormat.format(currentDate));
-        morning  = dateFormat.parse(EventEnum.MORNING.toString());
-        day  = dateFormat.parse(EventEnum.DAY.toString());
-        evening = dateFormat.parse(EventEnum.EVENING.toString());
-        night = dateFormat.parse(EventEnum.NIGHT.toString());
+    public String getEvent(){
 
 
-        if(current.after(morning) && current.before(day)){
-            log.info("Create  -> Good morning, World!");
-            return "MORNING";
+        String str = "";
+
+        switch (hours) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+
+                str = "night";
+                break;
+
+            case 6:
+            case 7:
+            case 8:
+
+                str = "morning";
+                break;
+
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            case 16:
+            case 17:
+            case 18:
+                str = "day";
+                break;
+
+            case 19:
+            case 20:
+            case 21:
+            case 22:
+                str = "evening";
+                break;
+            case 23:
+            case 24:
+                str = "night";
+                break;
+
+
         }
-        else if (current.after(day) && current.before(evening)){
-            log.info("Create -> Good day, World!");
-            return "DAY";
-        }
-        else if (current.after(evening) && current.before(night)){
-            log.info("Create -> Good evening, World!");
-            return "EVENING";
-        }
-        else
-            log.info("Create -> Good night, World!");
-        return "NIGHT";
-
-    }
-
-    public static Builder newBuilder(){
-        return new Event().new Builder();
-    }
-    public static Builder newBuilder(String event)throws ParseException{
-        return new Event(event).new Builder();
-    }
-
-    public class Builder{
-
-        public Builder() {
-
+        log.info("Create  -> Good " + str + ", World!");
+        return str;
         }
 
-        public Event build(){
-            return Event.this;
-        }
-
+    public Date getCurrentDate() {
+        return currentDate;
     }
+
+    public int getHours() {
+        return hours;
+    }
+
+
+
+
 
 }

@@ -1,116 +1,102 @@
-
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.text.ParseException;
 
 /**
  * Created by Елена on 07.06.16.
  */
 public class TestEvent {
-    private Event event;
 
     @Test
-    public  void testGetEvent() throws ParseException {
-        event = Event.newBuilder().build();
-        if (!event.getEvent().equals("MORNING") && !event.getEvent().equals("DAY") && !event.getEvent().equals("EVENING") && !event.getEvent().equals("NIGHT"))
-            Assert.fail();
+    public void testNightFirst(){
 
+        Event event = new Event(23);
+        Assert.assertEquals(event.getEvent(), "night");
     }
 
     @Test
-    public void testNightFirst()throws ParseException{
-        event = Event.newBuilder("23:00:00").build();
-        Assert.assertEquals(event.getEvent(), "NIGHT");
+    public void testNightSecond(){
+
+        Event event = new Event(5);
+        Assert.assertEquals(event.getEvent(), "night");
     }
 
     @Test
-    public void testNightSecond()throws ParseException{
-        event = Event.newBuilder("05:59:59").build();
-        Assert.assertEquals(event.getEvent(), "NIGHT");
+    public void testNightThree(){
+        Event event = new Event(1);
+        Assert.assertEquals(event.getEvent(), "night");
     }
 
     @Test
-    public void testNightThree()throws ParseException{
-        event = Event.newBuilder("23:00:01").build();
-        Assert.assertEquals(event.getEvent(), "NIGHT");
+    public void testNightFour(){
+        Event event = new Event(2);
+        Assert.assertEquals(event.getEvent(), "night");
     }
 
     @Test
-    public void testNightFour()throws ParseException{
-        event = Event.newBuilder("02:00:00").build();
-        Assert.assertEquals(event.getEvent(), "NIGHT");
+    public void testMorningFirst(){
+        Event event = new Event(6);
+        Assert.assertEquals(event.getEvent(), "morning");
     }
 
     @Test
-    public void testMorningFirst()throws ParseException{
-        event = Event.newBuilder("06:00:01").build();
-        Assert.assertEquals(event.getEvent(), "MORNING");
+    public void testMorningSecond(){
+        Event event = new Event(8);
+        Assert.assertEquals(event.getEvent(), "morning");
     }
 
     @Test
-    public void testMorningSecond()throws ParseException{
-        event = Event.newBuilder("08:59:59").build();
-        Assert.assertEquals(event.getEvent(), "MORNING");
+    public void testMorningThree(){
+        Event event = new Event(7);
+        Assert.assertEquals(event.getEvent(), "morning");
+    }
+
+
+    @Test
+    public void testDayFirst(){
+        Event event = new Event(9);
+        Assert.assertEquals(event.getEvent(), "day");
     }
 
     @Test
-    public void testMorningThree()throws ParseException{
-        event = Event.newBuilder("07:25:01").build();
-        Assert.assertEquals(event.getEvent(), "MORNING");
+    public void testDaySecond(){
+        Event event = new Event(18);
+        Assert.assertEquals(event.getEvent(), "day");
     }
 
     @Test
-    public void testMorningFour()throws ParseException{
-        event = Event.newBuilder("08:00:00").build();
-        Assert.assertEquals(event.getEvent(), "MORNING");
-    }
-    @Test
-    public void testDayFirst()throws ParseException{
-        event = Event.newBuilder("11:00:01").build();
-        Assert.assertEquals(event.getEvent(), "DAY");
+    public void testDayThree(){
+        Event event = new Event(15);
+        Assert.assertEquals(event.getEvent(), "day");
     }
 
     @Test
-    public void testDaySecond()throws ParseException{
-        event = Event.newBuilder("18:59:59").build();
-        Assert.assertEquals(event.getEvent(), "DAY");
+    public void testDayFour(){
+        Event event = new Event(16);
+        Assert.assertEquals(event.getEvent(), "day");
     }
 
     @Test
-    public void testDayThree()throws ParseException{
-        event = Event.newBuilder("15:35:51").build();
-        Assert.assertEquals(event.getEvent(), "DAY");
+    public void testEveningFirst(){
+        Event event = new Event(19);
+        Assert.assertEquals(event.getEvent(), "evening");
     }
 
     @Test
-    public void testDayFour()throws ParseException{
-        event = Event.newBuilder("16:53:15").build();
-        Assert.assertEquals(event.getEvent(), "DAY");
+    public void testEveningSecond(){
+        Event event = new Event(22);
+        Assert.assertEquals(event.getEvent(), "evening");
     }
 
     @Test
-    public void testEveningFirst()throws ParseException{
-        event = Event.newBuilder("19:00:01").build();
-        Assert.assertEquals(event.getEvent(), "EVENING");
+    public void testEveningThree(){
+        Event event = new Event(21);
+        Assert.assertEquals(event.getEvent(), "evening");
     }
 
     @Test
-    public void testEveningSecond()throws ParseException{
-        event = Event.newBuilder("22:59:59").build();
-        Assert.assertEquals(event.getEvent(), "EVENING");
-    }
-
-    @Test
-    public void testEveningThree()throws ParseException{
-        event = Event.newBuilder("21:25:01").build();
-        Assert.assertEquals(event.getEvent(), "EVENING");
-    }
-
-    @Test
-    public void testEveningFour()throws ParseException{
-        event = Event.newBuilder("22:00:00").build();
-        Assert.assertEquals(event.getEvent(), "EVENING");
+    public void testEveningFour(){
+        Event event = new Event(20);
+        Assert.assertEquals(event.getEvent(), "evening");
     }
 
 }
