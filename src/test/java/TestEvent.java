@@ -19,109 +19,109 @@ public class TestEvent {
     @Test
     public void testNightFirstLocal(){
 
-        Event event = new Event(15);
+        World event = new World(15);
 
-        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Добрый день, Мир!");
     }
 
     @Test
     public void testNightSecondLocal(){
 
-        Event event = new Event(5);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
+        World event = new World(5);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Спокойной ночи, Мир!");
     }
 
     @Test
     public void testNightFirst(){
 
-        Event event = new Event(23);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
+        World event = new World(23);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Спокойной ночи, Мир!");
     }
 
     @Test
     public void testNightSecond(){
 
-        Event event = new Event(3);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
+        World event = new World(3);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good night, World!");
     }
 
     @Test
     public void testNightThree(){
-        Event event = new Event(1);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
+        World event = new World(1);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good night, World!");
     }
 
     @Test
     public void testNightFour(){
-        Event event = new Event(2);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localEn()), "Good night, World!");
+        World event = new World(2);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good night, World!");
     }
 
     @Test
     public void testMorningFirst(){
-        Event event = new Event(6);
-        Assert.assertEquals(event.getEvent(), "morning");
+        World event = new World(6);
+        Assert.assertEquals(event.getWorld(), "morning");
     }
 
     @Test
     public void testMorningSecond(){
-        Event event = new Event(8);
-        Assert.assertEquals(event.getEvent(), "morning");
+        World event = new World(8);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Доброе утро, Мир!");
     }
 
     @Test
     public void testMorningThree(){
-        Event event = new Event(7);
-        Assert.assertEquals(event.getEvent(), "morning");
+        World event = new World(7);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good morning, World!");
     }
 
 
     @Test
     public void testDayFirst(){
-        Event event = new Event(9);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
+        World event = new World(9);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Добрый день, Мир!");
     }
 
     @Test
     public void testDaySecond(){
-        Event event = new Event(18);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
+        World event = new World(18);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good day, World!");
     }
 
     @Test
     public void testDayThree(){
-        Event event = new Event(17);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
+        World event = new World(17);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good day, World!");
     }
 
     @Test
     public void testDayFour(){
-        Event event = new Event(16);
-        Assert.assertEquals(event.printLocal(event.getEvent(),localRus()), "Добрый день, Мир!");
+        World event = new World(16);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Добрый день, Мир!");
     }
 
     @Test
     public void testEveningFirst(){
-        Event event = new Event(19);
-        Assert.assertEquals(event.getEvent(), "evening");
+        World event = new World(19);
+        Assert.assertEquals(event.getWorld(), "evening");
     }
 
     @Test
     public void testEveningSecond(){
-        Event event = new Event(22);
-        Assert.assertEquals(event.getEvent(), "evening");
+        World event = new World(22);
+        Assert.assertEquals(event.getWorld(), "evening");
     }
 
     @Test
     public void testEveningThree(){
-        Event event = new Event(21);
-        Assert.assertEquals(event.getEvent(), "evening");
+        World event = new World(21);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localRus()), "Добрый вечер, Мир!");
     }
 
     @Test
     public void testEveningFour(){
-        Event event = new Event(20);
-        Assert.assertEquals(event.getEvent(), "evening");
+        World event = new World(20);
+        Assert.assertEquals(event.printLocal(event.getWorld(),localEn()), "Good evening, World!");
     }
 
 }
