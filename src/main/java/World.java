@@ -14,13 +14,12 @@ public class World {
 
     public static void main(String[] args) {
 
-        Locale current = new Locale("ru", "RU");
+        Locale current = Locale.getDefault();
 
         World event = new World();
-        String str = event.getWorld();
-        String str1 = event.printLocal(str, current);
-        System.out.println(str1);
-        log.info(str1);
+        String strEvent = event.getWorld();
+        String strPrint = event.printLocal(strEvent, current);
+        System.out.println(strPrint);
 
     }
 
@@ -100,7 +99,9 @@ public class World {
 
     public String printLocal(String str, Locale loc) {
         ResourceBundle res = ResourceBundle.getBundle("bn",loc);
-        return res.getString(str);
+        String strRes = res.getString(str);
+        log.info(strRes);
+        return strRes;
 
     }
 
